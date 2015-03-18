@@ -1,0 +1,8 @@
+<div class="col-xs-12 gallery" ng-show="product.images.length">
+  <img class="col-xs-6 col-xs-offset-3" ng-src="{{product.images[gallery.current]}}" />
+  <ul class="col-xs-6 col-xs-offset-3 img-thumbnails clearfix">
+    <li class="col-xs-4 thumbnail" ng-repeat="image in product.images">
+      <a href ng-click="gallery.setCurrent($index)"><img ng-src="{{image}}" /></a>
+    </li>
+  </ul>
+</div>

@@ -28,3 +28,19 @@
   content: "";
   padding: 0;
 }
+
+.gallery > img {
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.img-thumbnails {}
+.thumbnail > a > img {
+  width: 30%;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: #fa787e; //red
+}
+.ng-valid.ng-dirty {
+  border-color: #78fa89; //green
+}
