@@ -4,7 +4,7 @@ var app = angular.module('store-products', []);
 app.directive('productGallery', function() {
   return {
     restrict: 'E',
-    templateUrl: 'product-gallery.html',
+    templateUrl: 'views/product-gallery.html',
     controller: function() {
       this.current = 0;
   		this.setCurrent = function(imageNumber){
@@ -18,7 +18,7 @@ app.directive('productGallery', function() {
 app.directive('productTabs', function() {
   return {
     restrict: 'E',
-    templateUrl: 'product-tabs.html',
+    templateUrl: 'views/product-tabs.html',
     controller: function() {
       this.tab = 1;
 
@@ -37,7 +37,7 @@ app.directive('productTabs', function() {
 app.directive("productSpecs", function() {
   return {
     restrict:"A",
-    templateUrl: "product-specs.html"
+    templateUrl: "views/product-specs.html"
   };
 });
 
